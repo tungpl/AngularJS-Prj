@@ -2,7 +2,7 @@
 angular.module('confusionApp', []).controller('menuController', function() {
   this.tab = 1;
   this.filtText = '';
-  
+
   var dishes = [
     {
       name:'Uthapizza',
@@ -13,7 +13,7 @@ angular.module('confusionApp', []).controller('menuController', function() {
       description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
       comment: ''
     },
-    
+
     {
       name:'Zucchipakoda',
       image: 'images/zucchipakoda.png',
@@ -23,7 +23,7 @@ angular.module('confusionApp', []).controller('menuController', function() {
       description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
       comment: ''
     },
-    
+
     {
       name:'Vadonut',
       image: 'images/vadonut.png',
@@ -33,7 +33,7 @@ angular.module('confusionApp', []).controller('menuController', function() {
       description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
       comment: ''
     },
-    
+
     {
       name:'ElaiCheese Cake',
       image: 'images/elaicheesecake.png',
@@ -43,16 +43,16 @@ angular.module('confusionApp', []).controller('menuController', function() {
       description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
       comment: ''
     }
-  ]; 
-  
+  ];
+
   this.dishes = dishes;
 
   this.select = function(setTab) {
     this.tab = setTab;
-    
+
     if (setTab === 2) {
       this.filtText = "appetizer";
-    } 
+    }
     else if (setTab === 3) {
       this.filtText = "mains";
     }
@@ -63,7 +63,7 @@ angular.module('confusionApp', []).controller('menuController', function() {
       this.filtText = "";
     }
   };
-  
+
   this.isSelected = function (checkTab) {
     return (this.tab === checkTab);
   };
