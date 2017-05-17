@@ -1,5 +1,5 @@
 {
-  "name": "conFusion",
+  "name": "AngularJS-Prj",
   "version": "1.0.0",
   "description": "Website for an awesome restaurant",
   "main": "index.html",
@@ -10,10 +10,10 @@
     "Restaurant"
   ],
   "authors": [
-    "Jogesh Muppala"
+    "Tung Pham"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/tungpl/AngularJS-Prj",
   "ignore": [
     "**/.*",
     "node_modules",
